@@ -41,6 +41,18 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Latoshia Williams",
+      "image": "http://localhost:3000/images/zz-plant.jpg",
+      "price": "15.00",
+      "id": 8
+    },
+    {
+      "name": "Rose",
+      "image": "http://localhost:3000/images/pilea.jpg",
+      "price": "24.99",
+      "id": 9
     }
   ]
 }

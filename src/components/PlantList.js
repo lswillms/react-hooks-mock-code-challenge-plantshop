@@ -1,9 +1,24 @@
 import React from "react";
+import NewPlantForm from "./NewPlantForm";
 import PlantCard from "./PlantCard";
 
-function PlantList() {
+function PlantList( {plants, search }) {
+
+  const filteredListings = plants.filter((plant) => plant.name.toLowerCase().includes(search.toLowerCase()))
+
+ const addPlantsToPage = filteredListings.map((plant) => (
+      <PlantCard
+        key = {plant.id}
+        plant = {plant}
+      />
+  ))
+  
+  
   return (
-    <ul className="cards">{/* render PlantCards components in here */}</ul>
+    <div>
+     <ul className="cards">{addPlantsToPage}</ul>
+     <NewPlantForm />
+    </div>
   );
 }
 
